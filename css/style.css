@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap'); 
+
+ @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap'); 
+
+
+
+
+@font-face{
+font-family: ola;
+
+src: url('../fonts/f1.otf')
+format('truetype');
+
+font-weight: normal;
+
+font-style: normal;
+} 
+
+:root
+{
+--c0: #ebe5c5;
+--c1: #83e1ad;
+--c2: #3ddc84;
+--c3: #2fa866;
+--c4: #1a5c37;
+--c5: #063d1e;
+
+    
+    
+--af: ola;
+--mainFont: ariel, helvetica, verdana, sans-serif;
+--hf:Bebas Neue;
+--f1:Pinyon Script;
+--f2:Sriracha;
+    
+}
+*{
+padding: 0px;
+margin: 0px;
+}
+
+a.ex::after{
+content: "\1F517";
+
+}
+
+a{
+text-decoration: none;
+color: white;
+}
+
+
+body{
+
+background-color:var(--c0);
+font-family: var(--mainFont);
+    
+}
+
+header{
+background-image:linear-gradient(to bottom, var(--c3), var(--c4));
+max-height: 150px;
+text-align: center;
+padding-top: 40px;
+
+}
+header> h1{
+font-family: var(--hf);
+color: white;
+margin-bottom: 20px;
+font-size: 2.5em;
+text-shadow: 2px 2px 0px black;
+
+}
+
+header >p{
+color: white;
+font-size: 1.2em;
+max-width:500px;
+margin: auto;
+padding: 0px 10px 30px 10px;
+
+}
+
+
+
+nav{
+background-color: var(--c5);
+padding: 10px;
+box-shadow: 0px 7px 9px black;
+
+
+}
+nav >a{
+text-decoration: none;
+padding: 10px;
+font-weight: bold;
+color: var(--c1);
+
+}
+
+nav > a:hover{
+background-color: var(--c3);
+color: var(--c5);
+transition-duration: .5;
+border-radius: 5px;
+}
+
+
+
+
+main{
+background-color: white;
+max-width: 1000px;
+min-width: 300px;
+background-color: white;
+margin: auto;
+padding: 25px;
+box-shadow: 0px 0px 10px black;
+margin-bottom: 30px;
+border-radius: 0px 0px 10px 10px;
+}
+
+main p{
+margin: 15px 0px;
+text-align: justify;
+text-indent: 40px;
+line-height: 2em;
+font-size: 1em;
+}
+
+
+
+main img{
+width: 100%;
+}
+main img.small{
+display: block;
+max-width: 350;
+margin: auto;
+}
+
+
+
+
+main h1{
+    color: var(--c5);
+font-family: var(--af);
+font-weight: normal;
+}
+
+main h2{
+    color: var(--c4);
+font-family: var(--af);
+font-size: 1.2em;
+font-weight: normal;
+background-image: linear-gradient(to right, var(--c1), transparent);
+}
+div.video{
+background-color: var(--c5);
+margin: 0px -20px; 30px -20px;
+padding: 20px;
+position: relative;
+padding-bottom: 50%;
+
+}
+div.video> iframe{
+position: absolute;
+top: 5%;
+left:5%;
+width: 90%;
+height:90%;
+}
+
+
+aside{
+background-color: var(--c1);
+padding: 10px;
+border-radius: 10px;
+box-shadow: 3px 3px 8px black;
+margin-top: 20px;
+}
+aside >h3{
+background-color: var(--c4);
+color: white;
+margin: -10px -10px 10px -10px;
+border-radius: 10px 10px 0px 0px;
+}
+aside >ul{
+list-style-position: inside;
+columns:2;
+list-style-type: '\2714\00A0\00A0';
+}
+footer{
+background-color: var(--c5);
+text-align: center;
+font-size: 0.8;
+padding: 10px;
+color: white;
+}
